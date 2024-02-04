@@ -1,5 +1,10 @@
 $primary: #fffbf7;
+$brand-color: #637894;
 
 body {
     background-color: $primary;
+}
+
+.login {
+    background-color: $brand-color;
 }
