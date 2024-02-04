@@ -6,7 +6,9 @@
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:build": "sass scss:css",
+    "sass:watch": "sass --watch scss:css"
   },
   "author": "Joel Bruns, Sara Lopez, Natalie Martinez",
   "license": "ISC",
@@ -14,8 +16,10 @@
     "lite-server": "^2.6.1"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^4.6.2",
+    "bootstrap-icons": "^1.11.3",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "sass": "^1.70.0"
   }
 }
