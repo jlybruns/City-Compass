@@ -1,28 +1,37 @@
 //function to validate email checking for @ symbol
-function validateUser(email, password) {
-    if(!email) {
-        throw new Error('You must provide a valid email.');
-        return false;
+const email = document.getElementById('floatingInput');
+const password = document.getElementById('floatingPassword');
+const validCheck = document.getElementById('validate');
+validCheck.addEventListener('click', validateEmail);
+validCheck.addEventListener('click', validatePassword);
+
+
+function validatePassword() {
+    let passwordValid = password.value;
+    if (!passwordValid) {
+        alert('You must input a password.');
+    } else if (passwordValid.length < 8) {
+        alert('Your password must be 8 characters or longer.');
+    } else if (!/[0-9]/g.test(passwordValid)) {
+        alert('Your password must contain at least one number');
+    } else {
+        alert('Password created.')
     }
-    if (!email.includes('@')) {
-      throw new Error('Your email must contain the @ symbol');
-      return false;
+}
+
+function validateEmail() {
+    let emailValid = email.value;
+    if(!emailValid) {
+        alert('You must provide a valid email.');
     }
-    if (password.length < 8) {
-        throw new Error('Password must be 8 characters or greater');
-        return false;
-      }
-      if (!/[0-9]/g.test(password)) {
-        throw new Error('Password must contain at least one number');
-        return false;
-      }
-      return true;
+    if (!emailValid.includes('@')) {
+      alert('Your email must contain the @ symbol');
+    }
   }
 
   function handleSubmit() {
-    let email = document.getElementById("floatingInput").value;
-    let password = document.getElementById("floatingPassword").value;
-    if (validateUser(email, password)){
+    validateUser(email, password)
+    {
         alert('Validation successful');
     }
   }
