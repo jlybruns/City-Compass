@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en" class="h-100">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,27 @@
         <link rel="stylesheet" href="https://use.typekit.net/dxj8hol.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body class="d-flex align-items-center py-4 bg-body-tertiary" data-new-gr-c-s-check-loaded="14.1153.0" data-gr-ext-installed="">
+    <body class="h-100 bg-body-tertiary" onload="displayWelcomeMessage()">
+        <main class="form w-100 h-100 m-auto">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-10 col-md-8 col-lg-6">
+                    <form id="myForm">
+                        <img src="images/LogoWords.png" class="mb-4" width="35%" height="35%">
+                        <h1 class="h3 mb-3 fw-normal" id="welcomeMessage"></h1>
+                        <input type="text" class="form-control" id="newStuff" placeholder="Where are you thinking of going?">
+                        <label for="newStuff">Search Locations</label>
+                        <br>
+                        <button class="btn btn-primary mb-5" onclick="getItem()">Let's Go!</button>
+                                <!-- <li class="list-group-item mb-2">
+                                    <input type="checkbox" value="" id="firstCheckbox" class="form-check-input me-1">
+                                    <label for="firstCheckbox" class="form-check-label">Test</label>
+                                </li> -->
+                            </ul>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </main>
         
     <!-- <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
         
