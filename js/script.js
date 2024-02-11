@@ -1,16 +1,16 @@
  
   //Code from Sara 
 
+  //Call the function to display the welcome message
+  const existingUser = 'Joel'; // Replace with the actual username
+  displayWelcomeMessage(existingUser);
+
   // Function to display a welcome message
   function displayWelcomeMessage(existingUser) {
     const welcomeMessageContainer = document.getElementById('welcomeMessage');
     welcomeMessageContainer.textContent = `Welcome back, ${existingUser}! Are you ready for a new adventure?`;
   }
   
-function displayWelcomeMessage(existingUser) {
-  const welcomeMessageContainer = document.query('#welcomeMessage');
-  welcomeMessageContainer.textContent = "Welcome back, " + existingUser + "! Are you ready for a new adventure?";
-}
 
 // Function to perform a search in the database
 async function performSearchInDatabase(searchTerm) {
@@ -79,9 +79,7 @@ async function showLocationAndWeather() {
   }
 }
 
-//Call the function to display the welcome message
-const existingUser = 'Joel'; // Replace with the actual username
-displayWelcomeMessage(existingUser);
+
 
 // Call the function to show location and weather
 showLocationAndWeather();
