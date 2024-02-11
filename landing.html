@@ -15,17 +15,16 @@
         <link rel="stylesheet" href="https://use.typekit.net/dxj8hol.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body class="h-100 bg-body-tertiary" onload="displayWelcomeMessage()">
+    <body class="h-100 bg-body-tertiary">
         <main class="form w-100 h-100 m-auto">
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="col-10 col-md-8 col-lg-6">
-                    <form id="myForm">
+                    <!-- Search form -->
+                    <form id="searchForm">
                         <img src="images/LogoWords.png" class="mb-4" width="35%" height="35%">
                         <h1 class="h3 mb-3 fw-normal" id="welcomeMessage"></h1>
-                        <input type="text" class="form-control" id="newStuff" placeholder="Where are you thinking of going?">
-                        <label for="newStuff">Search Locations</label>
-                        <br>
-                        <button class="btn btn-primary mb-5" onclick="getItem()">Let's Go!</button>
+                        <input type="text" class="form-control" id="searchInput" placeholder="Where are you thinking of going?">
+                        <button type="submit" class="btn btn-primary mt-2 mb-5">Search Locations</button>                  
                                 <!-- <li class="list-group-item mb-2">
                                     <input type="checkbox" value="" id="firstCheckbox" class="form-check-input me-1">
                                     <label for="firstCheckbox" class="form-check-label">Test</label>
