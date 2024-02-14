@@ -6,4 +6,17 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.nav-link {
+  color: #f5f7ff;
+}
+
+.navbar-brand {
+  color: #f2ae9f;
+}
+
+#weatherInfo {
+  color:#222a33;
+}
+
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,7 @@
 //function to validate email checking for @ symbol
 const email = document.getElementById('floatingInput');
 const password = document.getElementById('floatingPassword');
-const username = document.getElementById('username');
+// const username = document.getElementById('username');
 const validCheck = document.getElementById('validate');
 validCheck.addEventListener('click', validateEmail);
 validCheck.addEventListener('click', validatePassword);
@@ -31,4 +31,6 @@ function validatePassword() {
         window.location.assign("landing.html");
     }
 }
+
+ 
 

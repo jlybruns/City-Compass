@@ -1,5 +1,4 @@
- 
-  //Code from Sara 
+//Code from Sara 
 
   //Call the function to display the welcome message
   const existingUser = 'Joel'; // Replace with the actual username
@@ -10,7 +9,6 @@
     const welcomeMessageContainer = document.getElementById('welcomeMessage');
     welcomeMessageContainer.textContent = `Welcome back, ${existingUser}! Are you ready for a new adventure?`;
   }
-  
 
 // Function to perform a search in the database
 async function performSearchInDatabase(searchTerm) {
@@ -67,9 +65,7 @@ async function showLocationAndWeather() {
           
           const weatherInfoContainer = document.getElementById('weatherInfo');
           weatherInfoContainer.innerHTML = `
-              <p>City: ${cityName}</p>
-              <p>Temperature: ${temp}°C</p>
-              <p>Weather: ${description}</p>
+              <a>City: ${cityName} | Temperature: ${temp}°C | Weather: ${description}</a>
           `;
       } else {
           console.log('Geolocation is not supported by this browser.');
