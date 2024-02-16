@@ -6,16 +6,19 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.nav-link {
-  color: #f5f7ff;
-}
 
 .navbar-brand {
-  color: #f2ae9f;
+  color: #ab2e11;
+  font-weight: bold;
 }
 
 #weatherInfo {
-  color:#222a33;
+  color:#d1d8e0;
+}
+
+#recommend {
+  height: 25vh;
+  width: 75vw;
 }
 
 

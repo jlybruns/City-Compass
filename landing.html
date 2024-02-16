@@ -16,19 +16,30 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body class="h-100 bg-body-tertiary">
-        <nav class="navbar navbar-expand-lg bg-primary">
+        <nav class="navbar navbar-expand-lg bg-secondary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">City Compass</a>
+              <a class="navbar-brand" href="#">
+              <img src="images/Logo.svg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+              City Compass
+              </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><img src="images/list.svg"></span> <!--Add icon here-->
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">About</a>
-                  <a class="nav-link" href="#">Pricing</a>
-                  <div class="d-flex ms-5"><a class="nav-link" id="weatherInfo"></a></div>
-                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="d-flex ms-5">
+                    <a class="nav-link" id="weatherInfo"></a>
+                  </li>
+                </ul>
               </div>
             </div>
           </nav>
@@ -37,17 +48,31 @@
                 <div class="col-10 col-md-8 col-lg-6">
                     <!-- Search form -->
                     <form id="searchForm">
-                        <img src="images/LogoWords.png" class="mb-4" width="35%" height="35%">
+                        <img src="images/LogoWords.png" class="mb-4" width="30%" height="30%">
                         <h1 class="h3 mb-3 fw-normal" id="welcomeMessage"></h1>
                         <input type="text" class="form-control" id="searchInput" placeholder="Where are you thinking of going?">
-                        <button type="submit" class="btn btn-primary mt-2 mb-5">Search Locations</button>                  
+                        <button type="submit" class="btn btn-primary mt-2">Search Locations</button>                  
                         </div> 
                     </form>
+                    <div class="border-secondary-subtle border-1 bg-primary-subtle text-center" id="recommend">
+                      <ul class="nav nav-tabs mx-5">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link active" aria-current="page">Packing</a>
+                          <p id="searchResults"></p>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Places to Eat</a>
+                          <p id="weatherInfo"></p>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Getting Around</a>
+                          <p id="transit"></p>
+                        </li>
+                      </ul>
+                    </div>
                 </div>
             </div>
         </main>
-        <div id="searchResults"></div>
-        <div id="weatherInfo"></div>
         
     <!-- <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
         
