@@ -2,7 +2,7 @@
 
   //Call the function to display the welcome message
   const existingUser = 'Joel'; // Replace with the actual username
-  displayWelcomeMessage(existingUser);
+  displayWelcomeMessage(username);
 
   // Function to display a welcome message
   function displayWelcomeMessage(existingUser) {
@@ -54,7 +54,7 @@ async function showLocationAndWeather() {
           
           const { latitude, longitude } = position.coords;
           const apiKey = 'c55743438de6188555736118c6cbb2d4';
-          const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+          const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
           
           const response = await fetch(weatherUrl);
           const weatherData = await response.json();
@@ -65,7 +65,7 @@ async function showLocationAndWeather() {
           
           const weatherInfoContainer = document.getElementById('weatherInfo');
           weatherInfoContainer.innerHTML = `
-              <a>City: ${cityName} | Temperature: ${temp}°C | Weather: ${description}</a>
+              <a>City: ${cityName} | Temperature: ${temp}°F | Weather: ${description}</a>
           `;
       } else {
           console.log('Geolocation is not supported by this browser.');
